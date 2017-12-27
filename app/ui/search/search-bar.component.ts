@@ -5,12 +5,12 @@ import { Component } from '@angular/core';
   template: `
     <form class="form-inline float-xs-right">
       <input class="form-control"
-                   type="text"
-                   placeholder="Search">
-         <button class="btn btn-outline-success"
-                        type="submit">Search
-              </button>
-            </form>
+             type="text"
+             placeholder="Search">
+        <button class="btn btn-outline-success"
+                type="submit">Search
+        </button>
+    </form>
   `
 })
 

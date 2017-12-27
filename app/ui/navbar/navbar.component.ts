@@ -13,5 +13,4 @@ export class NavbarComponent {
   navItems: NavItem[] = [
      { routerLink: '/', label: 'Home', active: false }
    ];
-
 }
