@@ -39,6 +39,6 @@ export class SearchBarComponent {
     console.log(value.query);
     this._navService.changeNav(value.query);
     this.searchForm.reset();
-    this._router.navigate(["/search"];)
+    this._router.navigate(["/search"]);
   }
 }
