@@ -44,7 +44,9 @@
       <tr *ngFor="let s of shows">
         <td>
           <h5>
-            {{ s.show.name }}
+            <a [routerLink]="['/details', s.show.name, s.show.id]">
+              {{ s.show.name }}
+            </a>
             </h5>
           </td>
         <td>
