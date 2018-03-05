@@ -13,6 +13,8 @@ import { SearchModule } from './search/search.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
+import { NavService } from './shared/nav.service';
+
 import './shared/rxjs-extensions';
 
 @NgModule({
@@ -28,7 +30,7 @@ import './shared/rxjs-extensions';
   declarations: [ AppComponent,
                   HomeComponent
                 ],
-  providers: [ ],
+  providers: [ NavService ],
   bootstrap: [ AppComponent ]
 })
 
