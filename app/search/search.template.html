@@ -44,7 +44,9 @@
       <tr *ngFor="let s of shows">
         <td>
           <h5>
-            {{ s.show.name }}
+            <a [routerLink]="['/details', s.show.name, s.show.id]">
+              {{ s.show.name }}
+            </a>
             </h5>
           </td>
         <td>
@@ -55,7 +57,7 @@
         <td [innerHtml]="s.show.summary"></td>
         <td>
           <h5>
-          <span [ngClass]="{'bg-success text-white': s.show.status === 'Running', 'bg-danger': s.show.status !== 'Running'}">
+          <span [ngClass]="{'text-success': s.show.status === 'Running', 'text-danger': s.show.status !== 'Running'}">
             {{ s.show.status }}
            </span>
            </h5>
