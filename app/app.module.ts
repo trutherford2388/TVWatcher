@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app.routing';
 import { UIModule } from './ui/ui.module';
 import { CarouselModule } from './carousel/carousel.module';
 import { FeaturedModule } from './featured/featured.module';
+import { SearchModule } from './search/search.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,10 +19,11 @@ import './shared/rxjs-extensions';
   imports: [ BrowserModule,
              HttpModule,
              FormsModule,
-             AppRoutingModule,
              UIModule,
              CarouselModule,
-             FeaturedModule
+             FeaturedModule,
+             SearchModule,
+             AppRoutingModule
            ],
   declarations: [ AppComponent,
                   HomeComponent
